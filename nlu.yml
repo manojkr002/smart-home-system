@@ -1,0 +1,40 @@
+version: "2.0"
+nlu:
+- intent: turn_on_light
+  examples: |
+    - turn on the light
+    - switch on the light
+    - I need light
+    - can you light up the room?
+
+- intent: turn_off_light
+  examples: |
+    - turn off the light
+    - switch off the light
+    - it's too bright
+    - make it dark
+
+- intent: turn_on_fan
+  examples: |
+    - turn on the fan
+    - it's hot here
+    - start the fan
+
+- intent: turn_off_fan
+  examples: |
+    - turn off the fan
+    - stop the fan
+    - it's too cold
+
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey there
+    - good morning
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Home Chatbot</title>
+    <style>
+        body { font-family: Arial; background: #f4f4f4; padding: 20px; }
+        #chatbox { width: 100%; max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
+        input[type="text"] { width: 80%; padding: 10px; }
+        button { padding: 10px; }
+    </style>
+</head>
+<body>
+    <div id="chatbox">
+        <h2>Smart Home Assistant</h2>
+        <input type="text" id="command" placeholder="Enter your command" />
+        <button onclick="sendCommand()">Send</button>
+        <p id="response"></p>
+    </div>
+    <script>
+        function sendCommand() {
+            let cmd = document.getElementById("command").value;
+            document.getElementById("response").innerText = "You said: " + cmd;
+        }
+    </script>
+</body>
+</html>
